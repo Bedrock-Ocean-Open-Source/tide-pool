@@ -2,3 +2,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* TODO: Look into tailwind and convert the standard css below */
+body {
+  font-family: sans-serif;
+}
+
+table {
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15);
+  border: 2px solid #060B20;
+}
+
+thead tr {
+  background-color: #060B20;
+  color: #19FF92;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px 15px;
+}
+
+tbody {
+  border-bottom-right-radius: 20px;
+}
+
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+input {
+  padding:10px;
+  border-radius:10px;
+  border: 1px solid #060B20;
+}
+
+select {
+  padding:10px;
+  border-radius:10px;
+  border: 1px solid #060B20;
+}

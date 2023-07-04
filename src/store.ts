@@ -1,12 +1,17 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { mainSlice, MainSliceState } from './MainSlice';
+import { SurveysSliceState } from './pages/Surveys/types';
+import { surveysSlice } from '@/pages/Surveys/surveysSlice';
+
 
 export type RootState = {
-  main: MainSliceState;
+  surveys: SurveysSliceState;
 };
+
+export type AppDispatch = typeof store.dispatch
+
 
 export const store = configureStore<RootState>({
   reducer: {
-    main: mainSlice.reducer,
+    surveys: surveysSlice.reducer,
   },
 });
